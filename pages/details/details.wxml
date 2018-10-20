@@ -1,0 +1,6 @@
+<!--pages/details/details.wxml-->
+<view class='details'>
+  <view class='title'>{{title}}</view>
+  <view class='time'>{{time}}</view>
+  <view class='contente'>{{content[0].text}}</view>
+</view>

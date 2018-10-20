@@ -1,0 +1,5 @@
+/* pages/details/details.wxss */
+.details {
+  font-size: 200rpx;
+  text-align: center;
+}

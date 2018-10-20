@@ -1,21 +1,67 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.header-list {
+  display: flex; 
+  color: white;
+  background-color: rgb(38, 110, 219);
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.domestic {
+  width: 105rpx;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.international {
+  width: 105rpx;
 }
 
-.usermotto {
-  margin-top: 200px;
+.finance {
+  width: 105rpx;
+}
+
+.entertainment {
+  width: 105rpx;
+}
+
+.military {
+  width: 105rpx;
+}
+
+.pysicalEducation {
+  width: 105rpx;
+}
+
+.other {
+  width: 105rpx;
+}
+
+.home-page {
+  /* background-color: gainsboro; */
+  color: white;
+  position: relative;
+  padding-top: 20rpx;
+  padding-bottom: 250rpx;
+}
+
+.news-list {
+  /* background-color: tan; */
+  color: red;
+  padding-top: 0;
+  padding-bottom: 105rpx;
+  z-index: -1;
+}
+
+.image-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.title {
+  font-size: 35rpx;
+  color:red;
+}
+.list-bg {
+  position: absolute;
+  z-index: -1;
 }

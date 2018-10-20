@@ -1,13 +1,24 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<scroll-view scroll-x class>
+  <view class='header-list'>
+    <view class='domestic' bindtap='domesticData'>国内</view>
+    <view class='international' bindtap='internationaltData'>国际</view>
+    <view class='finance' bindtap='financeData'>财经</view>
+    <view class='entertainment' bindtap='entertainmentData'>娱乐</view>
+    <view class='military' bindtap='militaryData'>军事</view>
+    <view class='pysicalEducation' bindtap='pysicalEducationData'>体育</view>
+    <view class='other' bindtap='otherData'>其他</view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+</scroll-view>
+
+<!-- <view class='home-page'>
+  <image src='{{imagepath}}' mode='scaleToFill' class='image-bg'></image>
+  <view class='title'>{{title}}</view>
+  <view class='author'>{{author}}</view>
+  <view class='time'>{{time}}</view>
+</view> -->
+<view class="news-list" wx:for='{{newsList}}' bindtap='onNewsDetails'>
+  <image src='{{item.firstImage}}' mode='scaleToFill' class='list-bg'></image>
+  <view class='list-title'>{{item.title}}</view>
+  <view class='list-author'>{{item.source}}</view>
+  <view class='list-time'>{{item.date}}</view>
 </view>
